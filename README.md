@@ -1,6 +1,6 @@
 # Drawing-App---Intro-To-Programming-2
 
-https://drawing-app-intro-to-programming-2-hl55q3kw8-wanqian99.vercel.app
+https://drawing-app-intro-to-programming-2.vercel.app
 
 This is a drawing app done with P5.js
 
