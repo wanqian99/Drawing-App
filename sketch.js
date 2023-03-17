@@ -57,6 +57,7 @@ function setup() {
 	toolbox = new Toolbox();
 
 	//add the tools to the toolbox.
+	toolbox.addTool(new uploadTool());
 	toolbox.addTool(new FreehandTool());
     toolbox.addTool(new eraserTool());
 	toolbox.addTool(new LineToTool());
