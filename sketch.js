@@ -67,7 +67,6 @@ function setup() {
     toolbox.addTool(new textTool());
     toolbox.addTool(new patternTool());
     toolbox.addTool(new kaleidoscopeTool());
-    toolbox.addTool(new uploadTool());
 	background(255);
 }
 
