@@ -1,0 +1,466 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+#sidebar {
+	grid-area: sidebar;
+/*	overflow-y: scroll;*/
+    width: 55px;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif;
+}
+
+.header #text {
+    width: 150px;
+    float: left;
+    font-size: 25px;
+    margin: 3px;
+}
+
+.header #coords {
+    width: 200px;
+    float: right;
+    font-size: 15px;
+    margin: 9px;
+}
+
+.header #clearButton {
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 60px;
+    height: 20px;
+    float: right;
+    margin-top: 7px;
+}
+
+.header #saveImageButton {
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    float: right;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 36px;
+	max-width: 36px;
+	padding: 2px;
+    margin: 4px 5px;
+}
+
+.sideBarItem img{
+	max-height: 36px;
+	max-Width: 36px;
+}
+
+.colourPicker {
+    grid-area: colourPicker;
+/*	display:flex;*/
+	flex-direction:grid;
+	flex-flow: wrap;
+    padding-left: 30%;
+    float: left;
+    width: 100%;
+}
+
+.colourPicker p{
+    float: left;
+    padding-top: 15%;
+    margin: 0%;
+}
+
+.colourPicker input[type=color] {
+    -webkit-appearance: none;
+    margin-top: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.colourPicker #fillcheckboxid {
+    float: left;
+    margin-top: 20%;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+    padding-left: 10%;
+    float: left;
+    width: 100%;
+}
+
+.colourPalette p{
+    float: left;
+    padding-right: 50%;
+    padding-top: 5%;
+    margin: 0%;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    padding: 20px;
+}
+
+.options{
+	grid-area: options;
+    column-fill: auto;
+    column-width: 150px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	max-height: 30px;
+	max-width: 30px;
+	margin-right: 5px;
+    border-radius: 15px;
+}
+
+.options #pencilWidth {
+    float: left;
+    padding-left: 0%;
+}
+
+.options #selectarea {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    right: 0%;
+    margin: 1%;
+    outline: none;
+}
+
+.options #numberOfStampsControl {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #sizeOfStampControl {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 30%;
+}
+
+.options #stampInput {
+    width: 230px;
+    font-size: 15px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-top: 8%;
+}
+
+.options #textInputBox {
+    width: 350px;
+    float: right;
+    margin: 1% 0%;
+    position: absolute;
+    right: 10%;
+}
+
+.options #textInputBox input[type=text] {
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.options #textInputBox input[type=text]:focus {
+    background-color: lightsteelblue;
+    outline: none;
+}
+
+.options #uploadFileButton {    
+    float: left;
+    margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 6%;
+}
+
+.options #imgcheckboxid {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+
+.options #filterInput {
+    width: 140px;
+    font-size: 15px;
+    float: left;
+    margin-left: 35%;
+    margin-right: 0%;
+    margin-top: 16%;
+    margin-bottom: 8%;
+}
+
+.options #thresholdParamInput {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 35%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+}
+
+.options #posterizeParamInput {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 35%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #blurParamInput {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+}
+
+.options #alphaInput {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #directionButton {
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    right: 0%;
+    margin: 1%;
+    outline: none;
+}
+
+.options #strokeSlider {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #InputRotate {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #textInputSize {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #InputSides {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 22%;
+    margin-bottom: 1%;
+}
+
+.options #InputTextRadius {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #InputTextAngle {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.options #textInputFont {
+    width: 230px;
+    font-size: 15px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-top: 8%;
+}
+
+.options #textInputStyle {
+    width: 230px;
+    font-size: 15px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
+
+.options #textInputPath {
+    width: 230px;
+    font-size: 15px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
+
+.options #shapeInput {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-top: 8%;
+}
+
+.options #ellipseBtn{
+    float: left;
+    margin-top: 5%;
+    margin-left: 20%;
+    height: 46px;
+	width: 46px;
+	padding-left: 3px;
+    padding-top: 3px;
+    background-color: #444;
+    border: 0;
+}
+
+.options #ellipseBtn img{
+    max-height: 36px;
+	max-width: 36px;
+}
+
+.options #rectBtn{
+    float: left;
+    margin-top: 5%;
+    height: 46px;
+	width: 46px;
+	padding-left: 3px;
+    padding-top: 3px;
+    background-color: #444;
+    border: 0;
+}
+
+.options #rectBtn img{
+    max-height: 36px;
+	max-width: 36px;
+}
+
+.options #triangleBtn{
+    float: left;
+    margin-top: 5%;
+    height: 46px;
+	width: 46px;
+	padding-left: 3px;
+    padding-top: 3px;
+    background-color: #444;
+    border: 0;
+}
+
+.options #triangleBtn img{
+    max-height: 36px;
+	max-width: 36px;
+}
+
+.options #randomcheckboxid {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+
+.options #scopeSymmetry {
+    width: 150px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 9%;
+    margin-bottom: 1%;
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 70px 230px minmax(500px, 1fr);
+    grid-template-rows: 35px minmax(500px, 1fr) 180px;
+    grid-template-areas:
+           "header header header header header"
+            "sidebar content content content content"
+            "colourPicker colourP options options options";
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 100%;
+}
+
+.header {
+  background-color: #999;
+}

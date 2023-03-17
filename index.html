@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header">
+        <p id="text">Drawing App</p>
+        <button id="saveImageButton">Save Image</button>
+        <button id="clearButton">Clear</button>
+        <p id="coords">
+            x-coord: <span id="x-value"></span> &nbsp;&nbsp;&nbsp; 
+            y-coord: <span id="y-value"></span>
+        </p>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPicker">
+        <p>Colour Picker</p>
+        <input type="color" id="color-picker">
+      </div>
+      <div class="box colourPalette">
+        <p>Colour Swatch</p>
+      </div> 
+      <div class="box options" id="test">
+      </div>
+	</div>
+    
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="colourPicker.js"></script>
+    <script src="helperFunctions.js"></script>
+      
+    <script src="scissorsTool.js"></script>
+    <script src="widthTool.js"></script>
+    <script src="fillTool.js"></script>
+    <script src="rotateTool.js"></script>
+
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="eraserTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    
+    <script src="polygonSides.js"></script>
+    <script src="shapeTool.js"></script>
+    <script src="shapesList.js"></script>
+      
+    <script src="stampTool.js"></script>
+    <script src="stampAdjustTool.js"></script>
+    <script src="stampsList.js"></script>
+      
+    <script src="uploadTool.js"></script>
+    <script src="uploadFile.js"></script>
+    <script src="backgroundImage.js"></script>
+    <script src="imgFilter.js"></script>
+    <script src="filterParam.js"></script>
+    <script src="alphaVal.js"></script>
+      
+    <script src="textTool.js"></script>
+    <script src="textInput.js"></script>
+    <script src="textSize.js"></script>
+    <script src="textStyle.js"></script>
+    <script src="textFont.js"></script>
+    <script src="textAngle.js"></script>
+    <script src="textRadius.js"></script>
+    <script src="textAlongPath.js"></script>
+    <script src="textCirclePath.js"></script>
+    <script src="textCurvePath.js"></script>
+      
+    <script src="patternTool.js"></script>
+    <script src="patternBtn.js"></script>
+    <script src="randomCol.js"></script>
+      
+    <script src="kaleidoscopeTool.js"></script>
+    <script src="scopeSymmetry.js"></script>
+  </body>
+</html>
+
+<!--
+
+--reference--
+*upload file tool*
+https://p5js.org/reference/#/p5/createFileInput
+
+*type text on path tool*
+https://codepen.io/kvnol/pen/VwLbmxX
+
+*polygon tool*
+https://p5js.org/examples/form-regular-polygon.html
+
+*pattern tool*
+https://p5js.org/examples/drawing-patterns.html
+
+*mouse position*
+https://codepen.io/dcode-software/pen/exbKLv
+
+*kaleidoscope*
+https://p5js.org/examples/interaction-kaleidoscope.html
+-->
