@@ -1,4 +1,4 @@
-# Drawing-App---Intro-To-Programming-2
+# Drawing-App
 
 https://drawing-app-intro-to-programming-2.vercel.app
 
